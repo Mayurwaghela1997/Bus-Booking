@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body bgcolor="White" style="height: 165px">
+    <form id="form1" runat="server">
+    <div id="container">
+        <!--header starts -->
+        <div id="header">
+            <div><asp:Image ID="imglogo" runat="server" Width="105px" ImageUrl="~/images/logo.png" /></div>
+            <div style="height: 27px; text-align:right">
+                <asp:Button ID="imgbtnlogin" runat="server" BackColor="#368FFC" ForeColor="Black" 
+                    Text="Login" Width="67px" onclick="imgbtnlogin_Click" />
+                <asp:Button ID="imgbtnregister" runat="server" BackColor="#368FFC" 
+                    Height="26px" Text="Register" Width="67px" onclick="imgbtnregister_Click" />
+                <asp:Button ID="imgbtnhelp" runat="server" BackColor="#368FFC" Height="26px" 
+                    Text="Help" Width="67px" onclick="imgbtnhelp_Click" /><br /><br />
+            </div>
+            </div>
+        </div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server"> </asp:ContentPlaceHolder><br /><br />
+        <div id="footer">
+        <div>
+            <div style="text-align:right">
+                    <asp:ImageButton ID="ImageButton1" runat="server" Height="65px" 
+                        ImageUrl="~/images/facebook.png" onclick="ImageButton1_Click" />
+                    <asp:ImageButton ID="ImageButton2" runat="server" Height="65px" 
+                        ImageUrl="~/images/instagram.jpg" Width="65px" onclick="ImageButton2_Click" />
+            </div>
+            <div style="float:left; text-align: right">
+                <asp:Label ID="lblCreatedBy" Text="Created by mayur" runat="server"></asp:Label>&nbsp;|  
+                <asp:HyperLink ID="HyperLink1" Text="Feedback" NavigateUrl="feedback.aspx" runat="server"></asp:HyperLink>
+            </div>                    
+        </div>     
+        </div>           
+        <!--footer ends -->
+    </form>
+</body>
+</html>

@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="mobile.master.cs" Inherits="mobile" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <meta name="viewport" content="width=device-width" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table cellspacing=0>
+    <tr>
+    <td style="background-color:Red; font-weight:bold; width:100% "><center>BUS BOOKING</center></td>
+    <td align="right" style="background-color:Red; font-weight:bold; width:100% "><asp:HyperLink Text="register here" runat="server" ID="linkregister" NavigateUrl="~/register.aspx"></asp:HyperLink></td>
+    </tr>
+    <tr>
+    <td colspan="2">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </td>
+    </tr>
+    <tr>
+    <td>
+        <b>Follow Us:</b>
+    </td>
+    <td align="right">
+        <asp:ImageButton ID="imgfb" runat="server" ImageUrl="~/images/facebook.png" Height="40px" Width="40px"/>
+        <asp:ImageButton ID="imginsta" runat="server" ImageUrl="~/images/instagram.jpg" Height="40px" Width="40px"/>
+    </td>
+    </tr>
+    <tr>
+    <td align="left" style="background-color:Red; font-weight:bold; width:100% ">Created by Mayur |<asp:HyperLink ID="linkfeedback" runat="server" NavigateUrl="~/feedback.aspx" Text="Feedback"></asp:HyperLink></td>
+    <td align="right" style="background-color:Red; font-weight:bold; width:100% "><asp:HyperLink ID="linklogout" NavigateUrl="~/logout.aspx" runat="server" Text="Logout"></asp:HyperLink></td>
+    </tr>
+    </table>
+    </form>
+</body>
+</html>

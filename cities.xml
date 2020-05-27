@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<cities>
+  <city>
+    <name>mumbai</name>
+    <value>mumbai</value>
+  </city>
+  <city>
+    <name>surat</name>
+    <value>surat</value>
+  </city>
+  <city>
+    <name>ahembdabad</name>
+    <value>ahembdabad</value>
+  </city>
+</cities>

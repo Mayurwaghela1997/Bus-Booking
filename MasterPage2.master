@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage2.master.cs" Inherits="MasterPage2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style type="text/css">
+        .style1
+        {
+            width: 20%;
+        }
+        .style2
+        {
+            width: 20%;
+        }
+        .style3
+        {
+            width: 960px;
+        }
+        .style4
+        {
+            background-image: "~/images/bus background.png";
+        }
+    </style>
+     <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+<center>
+    <form id="form1" runat="server">
+    <table>
+        <tr style="height: 20%">
+            <td colspan="3">
+                <asp:Image ID="imgheader" runat="server" ImageUrl="~/images/bus photo2.jpg" Width="100%" /></td>
+        </tr>
+        <tr style="height:auto">
+            <td align="left" class="style1">
+            <br /><br />
+                <asp:Button ID="imgbtnlogin" runat="server" BackColor="#368FFC" ForeColor="Black" 
+                    Text="Login" Width="67px" onclick="imgbtnlogin_Click" /><br /><br />
+                <asp:Button ID="imgbtnregister" runat="server" BackColor="#368FFC" 
+                    Height="26px" Text="Register" Width="67px" onclick="imgbtnregister_Click" /><br /><br />
+                <asp:Button ID="imgbtnhelp" runat="server" BackColor="#368FFC" Height="26px" 
+                    Text="Help" Width="67px" onclick="imgbtnhelp_Click" /><br /><br />
+                    <asp:Button ID="btnmybooking" runat="server" BackColor="#368FFC" 
+                    Height="26px" Text="My Bookings" Width="67px" 
+                    onclick="btnmybooking_Click" Visible="false" /><br /><br />
+                <asp:Button ID="btnbusinfo" runat="server" BackColor="#368FFC" Height="26px" 
+                    Text="Bus Info" Width="67px" Visible="false" onclick="btnbusinfo_Click"/><br /><br />
+                    <asp:Button ID="btnaddadmin" runat="server" BackColor="#368FFC" Height="26px" 
+                    Text="Add Admin" Width="67px" Visible="false" onclick="btnaddadmin_Click"/><br /><br />
+                    <asp:Button ID="btnaddbus" runat="server" BackColor="#368FFC" Height="26px" 
+                    Text="Add Bus" Width="67px" Visible="false" onclick="btnaddbus_Click"/><br /><br /></td>
+            <td style="width:auto ; height:auto; background-color:Gray">
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder></td>
+            <td class="style2" style="height:auto">
+            <asp:Button ID="btnlogout" Width="67px" runat="server" Text="Logout" 
+                    BackColor="#368FFC" Height="26px" onclick="btnlogout_Click1" Visible="false"/>
+                </td>
+        </tr>
+        <tr style="height:20%">
+            <td class="style1">
+                <asp:Label ID="lblCreatedBy" runat="server" Text="Created by mayur"></asp:Label>
+                &nbsp;|
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="feedback.aspx" 
+                    Text="Feedback"></asp:HyperLink>
+            </td>
+            <td>
+                &nbsp;</td>
+            <td class="style2">
+                <asp:ImageButton ID="ImageButton1" runat="server" Height="65px" Width="65px"
+                        ImageUrl="~/images/facebook.png" onclick="ImageButton1_Click" />
+                    <asp:ImageButton ID="ImageButton2" runat="server" Height="65px" 
+                        ImageUrl="~/images/instagram.jpg" Width="65px" onclick="ImageButton2_Click" /></td>
+        </tr>
+    </table>
+    </form>
+    </center>
+</body>
+</html>
